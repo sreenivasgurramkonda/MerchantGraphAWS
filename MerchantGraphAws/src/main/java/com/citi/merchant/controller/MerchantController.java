@@ -22,7 +22,7 @@ public class MerchantController {
 	MerchantRepository merchantInfoRepository;
 	
 		
-	@RequestMapping(value = "/customer", method=RequestMethod.GET)
+	@RequestMapping(value = "/merchant", method=RequestMethod.GET)
 	public  ResponseEntity<List<MerchantInfo>> getCustomerById(@RequestParam(required = false)String id, @RequestParam(required = false)String name){
 		ResponseEntity<List<MerchantInfo>> responseEntity = null;
 		List<MerchantInfo> result = new ArrayList<>();
